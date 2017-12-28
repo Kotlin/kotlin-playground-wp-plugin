@@ -4,6 +4,11 @@ Allows to embed interactive Kotlin playground to any post via `[kotlin]` [shortc
 
 **[Preview](https://raw.githubusercontent.com/Kotlin/kotlin-playground-wp-plugin/master/preview.gif)**
 
+## Installation
+
+1. Download `kotlin-playground-wp-plugin.zip` from latest release from [releases page](https://github.com/Kotlin/kotlin-playground-wp-plugin/releases).
+2. Go to WordPress `Admin Panel -> Plugins -> Add New`, choose `Upload Plugin`, select file from your computer and press `Install now`.
+
 ## Usage
 
 Use `[kotlin]code...[/kotlin]` shortcode as usual. Example:
