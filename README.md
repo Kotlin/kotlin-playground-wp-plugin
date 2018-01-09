@@ -2,7 +2,7 @@
 
 Allows to embed interactive Kotlin playground to any post via `[kotlin]` [shortcode](https://codex.wordpress.org/Shortcode_API).
 
-**[Preview](https://raw.githubusercontent.com/Kotlin/kotlin-playground-wp-plugin/master/preview.gif)**
+![Preview](https://raw.githubusercontent.com/Kotlin/kotlin-playground-wp-plugin/master/preview.gif)
 
 ## Installation
 
