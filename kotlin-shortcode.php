@@ -4,7 +4,7 @@ namespace Kotlin\KotlinPlaygroundWordpressPlugin;
 
 class KotlinShortcode
 {
-    const KOTLIN_RUNCODE_URL = 'https://unpkg.com/kotlin-runcode@1/dist/runcode.min.js';
+    const KOTLIN_RUNCODE_URL = 'https://unpkg.com/kotlin-playground@1/dist/playground.min.js';
 
     const SHORTCODE_NAME = 'kotlin';
 
