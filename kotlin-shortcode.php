@@ -4,7 +4,7 @@ namespace Kotlin\KotlinPlaygroundWordpressPlugin;
 
 class KotlinShortcode
 {
-    const KOTLIN_PLAYGROUND_CND_URL = 'https://unpkg.com/kotlin-playground@1/dist/playground.min.js';
+    const KOTLIN_PLAYGROUND_CND_URL = 'https://unpkg.com/kotlin-playground@1';
 
     const SHORTCODE_NAME = 'kotlin';
 
