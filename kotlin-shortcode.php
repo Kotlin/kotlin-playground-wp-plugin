@@ -4,7 +4,7 @@ namespace Kotlin\KotlinPlaygroundWordpressPlugin;
 
 class KotlinShortcode
 {
-    const KOTLIN_PLAYGROUND_URL = 'https://unpkg.com/kotlin-playground@1/dist/playground.min.js';
+    const KOTLIN_PLAYGROUND_CND_URL = 'https://unpkg.com/kotlin-playground@1/dist/playground.min.js';
 
     const SHORTCODE_NAME = 'kotlin';
 
@@ -55,7 +55,7 @@ class KotlinShortcode
     }
 
     public static function renderInitJs() {
-        $src = self::KOTLIN_PLAYGROUND_URL_URL;
+        $src = self::KOTLIN_PLAYGROUND_CND_URL;
         $content = <<<HTML
 <script src="$src"></script>
 <script>
