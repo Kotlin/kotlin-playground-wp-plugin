@@ -6,7 +6,7 @@ Allows embedding interactive Kotlin playground to any post via `[kotlin]` [short
 
 ## Installation
 
-1. Download `kotlin-playground-wp-plugin.zip` from latest release from [releases page](https://github.com/Kotlin/kotlin-playground-wp-plugin/releases).
+1. Download [latest release](https://github.com/Kotlin/kotlin-playground-wp-plugin/releases/download/v0.0.2/kotlin-playground-wp-plugin.zip).
 2. Go to WordPress `Admin Panel -> Plugins -> Add New`, choose `Upload Plugin`, select file from your computer and press `Install now`.
 
 ## Usage
