@@ -39,13 +39,31 @@ class KotlinShortcode
         }
 
         $attrs = shortcode_atts(array(
-            'runnable' => true
+            'runnable' => true,
+            'platform' => "java",
+            'folded-button' => true
         ), $attributes);
 
         $dataAttrs = array();
 
+        if ($attrs['folded-button'] === 'false') {
+            $dataAttrs[] = 'folded-button="false"';
+        }
+
         if ($attrs['runnable'] === 'false') {
             $dataAttrs[] = 'data-highlight-only="true"';
+        }
+
+        switch ($attrs['platform']) {
+            case "js":
+                $dataAttrs[] = 'data-target-platform="js"';
+                break;
+            case "canvas":
+                $dataAttrs[] = 'data-target-platform="canvas"';
+                break;
+            case "junit":
+                $dataAttrs[] = 'data-target-platform="junit"';
+                break;
         }
 
         $dataAttrsString = join(' ', $dataAttrs);
