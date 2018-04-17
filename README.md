@@ -26,3 +26,11 @@ fun main(args: Array<String>) {
 ### `runnable="true|false"` (`true` by default)
 
 Creates read-only playground without ability to edit and run code. Example `[kotlin runnable="false"]code...[/kotlin]`.
+
+### `folded-button="true|false"` (`true` by default)
+
+Hide code snippet with value `false` outside of markers `//sampleStart` and `//sampleEnd`.  
+
+### `platform="java|js|junit|canvas"` (`java` by default)
+
+Creates playground with different target platforms
