@@ -67,7 +67,7 @@ class KotlinShortcode
         }
 
         $dataAttrsString = join(' ', $dataAttrs);
-        $encoded = htmlspecialchars($content);
+        $encoded = htmlspecialchars(html_entity_decode($content));
 
         return '<pre class="kotlin-code" '. $dataAttrsString .' style="visibility: hidden; padding: 36px 0;">'. $encoded .'</pre>';
     }
