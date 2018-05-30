@@ -41,6 +41,7 @@ class KotlinShortcode
         $attrs = shortcode_atts(array(
             'runnable' => true,
             'platform' => "java",
+            'version' => "",
             'folded-button' => true
         ), $attributes);
 
@@ -52,6 +53,10 @@ class KotlinShortcode
 
         if ($attrs['runnable'] === 'false') {
             $dataAttrs[] = 'data-highlight-only="true"';
+        }
+
+        if ($attrs['version']) {
+            $dataAttrs[] = 'data-version="'.$attrs['version'].'"';
         }
 
         switch ($attrs['platform']) {
