@@ -44,6 +44,7 @@ class KotlinShortcode
             'theme' => "idea",
             'version' => "",
             'indent' => "4",
+            'auto-indent' => true,
             'folded-button' => true
         ), $attributes);
 
@@ -55,6 +56,10 @@ class KotlinShortcode
 
         if ($attrs['runnable'] === 'false') {
             $dataAttrs[] = 'data-highlight-only="true"';
+        }
+
+        if ($attrs['auto-indent'] === 'false') {
+            $dataAttrs[] = 'auto-indent="false"';
         }
 
         if ($attrs['version']) {
