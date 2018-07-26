@@ -34,3 +34,23 @@ Hide code snippet with value `false` outside of markers `//sampleStart` and `//s
 ### `platform="java|js|junit|canvas"` (`java` by default)
 
 Creates playground with different target platforms
+
+### `min-version="1.2"`
+
+Minimum target Kotlin [compiler version](https://try.kotlinlang.org/kotlinServer?type=getKotlinVersions)
+
+### `auto-indent="true|false"` (`true` by default)
+
+Whether to use the context-sensitive indentation.
+
+### `indent="2|4"` (`4` by default)
+
+How many spaces a block should be indented.
+
+### `theme="idea|darcula|default"`
+
+Editor IntelliJ IDEA themes.
+
+### `version="1.0.7` (latest stable version by default)
+
+Target Kotlin [compiler version](https://try.kotlinlang.org/kotlinServer?type=getKotlinVersions):
