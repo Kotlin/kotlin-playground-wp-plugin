@@ -43,6 +43,7 @@ class KotlinShortcode
             'platform' => "java",
             'theme' => "idea",
             'version' => "",
+            'indent' => "4",
             'folded-button' => true
         ), $attributes);
 
@@ -78,6 +79,15 @@ class KotlinShortcode
                 break;
             case "darcula":
                 $dataAttrs[] = 'theme="darcula"';
+                break;
+        }
+
+        switch ($attrs['indent']) {
+            case "4":
+                $dataAttrs[] = 'indent="4"';
+                break;
+            case "2":
+                $dataAttrs[] = 'indent="2"';
                 break;
         }
 
