@@ -41,6 +41,7 @@ class KotlinShortcode
         $attrs = shortcode_atts(array(
             'runnable' => true,
             'platform' => "java",
+            'theme' => "idea",
             'version' => "",
             'folded-button' => true
         ), $attributes);
@@ -68,6 +69,15 @@ class KotlinShortcode
                 break;
             case "junit":
                 $dataAttrs[] = 'data-target-platform="junit"';
+                break;
+        }
+
+        switch ($attrs['theme']) {
+            case "idea":
+                $dataAttrs[] = 'theme="idea"';
+                break;
+            case "darcula":
+                $dataAttrs[] = 'theme="darcula"';
                 break;
         }
 
