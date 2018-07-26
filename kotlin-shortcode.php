@@ -43,6 +43,7 @@ class KotlinShortcode
             'platform' => "java",
             'theme' => "idea",
             'version' => "",
+            'min-version' => "",
             'indent' => "4",
             'auto-indent' => true,
             'folded-button' => true
@@ -64,6 +65,10 @@ class KotlinShortcode
 
         if ($attrs['version']) {
             $dataAttrs[] = 'data-version="'.$attrs['version'].'"';
+        }
+
+        if ($attrs['min-version']) {
+            $dataAttrs[] = 'data-min-compiler-version="'.$attrs['min-version'].'"';
         }
 
         switch ($attrs['platform']) {
