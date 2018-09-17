@@ -39,7 +39,7 @@ Creates playground with different target platforms
 
 Minimum target Kotlin [compiler version](https://try.kotlinlang.org/kotlinServer?type=getKotlinVersions)
 
-### `auto-indent="true|false"` (`true` by default)
+### `auto-indent="true|false"` (`false` by default)
 
 Whether to use the context-sensitive indentation.
 
